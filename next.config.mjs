@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withImages from 'next-images'
 
-export default nextConfig;
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['placeholder.com'], // Add any domains you'll be loading images from
+  },
+}
+
+export default withImages(nextConfig)
+
