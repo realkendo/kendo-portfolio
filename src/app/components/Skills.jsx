@@ -6,14 +6,14 @@ import { motion } from 'framer-motion'
 const skills = [
   { name: 'React', level: 90 },
   { name: 'Next.js', level: 85 },
-  { name: 'TypeScript', level: 80 },
+  { name: 'JavaScript', level: 80 },
   { name: 'Node.js', level: 75 },
   { name: 'CSS/SASS', level: 85 },
   { name: 'GraphQL', level: 70 },
 ]
 
 export default function Skills() {
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
+  const [hoveredSkill, setHoveredSkill] = useState(null)
 
   return (
     <section className="py-20 bg-gray-900">
@@ -34,7 +34,7 @@ export default function Skills() {
                   className="bg-blue-600 h-2.5 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, ease: "easeOut" }}
+                  transition={{ duration: 1, ease: 'easeOut' }}
                 />
               </div>
               {hoveredSkill === skill.name && (
@@ -53,4 +53,3 @@ export default function Skills() {
     </section>
   )
 }
-

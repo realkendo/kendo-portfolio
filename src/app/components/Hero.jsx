@@ -29,7 +29,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Your Name
+          Kenneth Istifanus
         </motion.h1>
         <motion.p 
           className="text-2xl"
@@ -37,7 +37,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Web Developer & Designer
+          Web Developer & Engineer 
         </motion.p>
       </div>
     </section>
