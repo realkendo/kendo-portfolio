@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 
+
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
@@ -11,6 +12,7 @@ const navItems = [
   { name: 'Blog', href: '#blog' },
   { name: 'Contact', href: '#contact' },
 ]
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

@@ -15,6 +15,7 @@ const projects = [
 
 const categories = ['All', 'Web Development', 'Mobile Development', 'Machine Learning', 'Data Science']
 
+
 export default function Projects() {
   const [filter, setFilter] = useState('All')
 

@@ -12,6 +12,7 @@ const skills = [
   { name: 'GraphQL', level: 70 },
 ]
 
+
 export default function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState(null)
 
