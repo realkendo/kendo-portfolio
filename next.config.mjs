@@ -8,5 +8,6 @@ const nextConfig = {
   },
 }
 
+
 export default withImages(nextConfig)
 

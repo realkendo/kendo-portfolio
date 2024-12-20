@@ -6,6 +6,7 @@ const featuredPosts = [
   { id: 3, title: 'Building Scalable APIs with GraphQL', excerpt: 'Learn how to create efficient and flexible APIs using GraphQL.', date: '2023-04-30' },
 ]
 
+
 export default function Blog() {
   return (
     <section className="py-20 bg-gray-900">
