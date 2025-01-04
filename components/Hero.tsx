@@ -34,7 +34,7 @@ export const Hero = () => {
             k3nd0
           </h1>
           <Image 
-            src={'/myPic.jpeg'}
+            src={'/myPhoto.png'}
             alt='Profile Pic'
             width={250}
             height={250}
