@@ -39,7 +39,36 @@ export const Hero = () => {
             width={250}
             height={250}
           />
+
+          <div className='flex bg-white/10 shadow-xl p-3 rounded-3xl justify-centered items-center space-x-2 mb-4'>
+            <Image 
+              src={obj}
+              alt='Globe'
+              width={20}
+              height={20}
+              className='rounded-2xl mx-auto'
+            />
+
+            <Image 
+              src={obj}
+              alt='Globe'
+              width={20}
+              height={20}
+              className='rounded-2xl mx-auto'
+            />
+
+            <Image 
+              src={obj}
+              alt='Globe'
+              width={20}
+              height={20}
+              className='rounded-2xl mx-auto'
+            />            
+            <p className='font-medium'>10+ Satisfied Clients</p>
+          </div>
         </div>
+
+        <p className='my-6 max-w-lg'>Frontend Developer based in Kaduna, Nigeria... with over 2yrs experience</p>
       </motion.section>       
     </>
   )
