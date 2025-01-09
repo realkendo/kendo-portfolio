@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { animate, useMotionValue, useMotionTemplate, motion } from 'framer-motion';
-import obj from '@assets/globe.svg'
+import obj from '@svgr/webpack?-svgo,+titleProp,+ref!../public/globe.svg';
 import Image from 'next/image';
 
 const COLORS_TOP = ['#13FFAA', '#1E67C6', '#CE84CF', '#DD335C']
@@ -68,7 +68,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <p className='my-6 max-w-lg'>Frontend Developer based in Kaduna, Nigeria... with over 2yrs experience</p>
+        <p className='my-6 max-w-xl'>Frontend Developer based in Kaduna, Nigeria... with over 2yrs experience</p>
       </motion.section>       
     </>
   )
