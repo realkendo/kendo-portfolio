@@ -40,7 +40,13 @@ export const Hero = () => {
           </span>
           <h1 className="text-white/40 text-7xl font-blck"> Hello, I am</h1>
           <span className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent md:text-7xl">
-            k3nd0
+          <motion.button
+            style={{ border, boxShadow }}
+            whileHover={{}}
+            whileTap={{}}
+            className="flex w-fit items-center gap-2 px-4 py-2"
+          > k3nd0
+          </motion.button>
           </span>
           
           <Image
