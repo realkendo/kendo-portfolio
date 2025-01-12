@@ -35,16 +35,16 @@ export const Hero = () => {
         className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200"
       >
         <div className="z-10 flex flex-col items-center">
-          <span className="mb-1.5 inline-block rounded-full bg-gray-600/20 px-3 py-1.5 text-sm">
+          {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/20 px-3 py-1.5 text-sm">
             OPEN FOR DEALS
-          </span>
-          <h1 className="text-white/40 text-7xl font-blck"> Hello, I am</h1>
+          </span> */}
+          <h1 className="text-white/40 text-5xl font-blck my-5"> Welcome to my site, I'm</h1>
           <span className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent md:text-7xl">
           <motion.button
             style={{ border, boxShadow }}
             whileHover={{}}
             whileTap={{}}
-            className="flex w-fit items-center gap-2 px-4 py-2"
+            className="flex w-fit items-center border-2 border-dotted gap-2 px-4 py-2"
           > k3nd0
           </motion.button>
           </span>
