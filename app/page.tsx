@@ -1,6 +1,7 @@
 import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { Stack } from "@/components/Stack";
+import { LogoAnimation } from "@/components/LogoAnimation";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Stack />
+      <LogoAnimation />
     </>
   );
 };
