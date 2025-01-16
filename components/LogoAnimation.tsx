@@ -2,14 +2,14 @@
 
 import Image from "next/image"
 import { motion} from "framer-motion"
-import wordpress  from "@/assets/img-wordpress.png"
+// import wordpress  from "@/assets/img-wordpress.png"
 
 
 const images = [
-  {src: wordpress, alt: "Elementor"},
-  {src: wordpress, alt: "Oracle"},
-  {src: wordpress, alt: "Wordpress"},
-  {src: wordpress, alt: "Python"},
+  {src: "/assets/img-wordpress.png", alt: "Wordpress"},
+  // {src: wordpress, alt: "Oracle"},
+  // {src: wordpress, alt: "Wordpress"},
+  // {src: wordpress, alt: "Python"},
 ]
 
 
