@@ -11,7 +11,7 @@ import obj from "@svgr/webpack?-svgo,+titleProp,+ref!../public/globe.svg";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C", "#00cc99"];
+const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C", "#00cc99", "#baebae"];
 
 export const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
