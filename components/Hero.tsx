@@ -7,7 +7,7 @@ import {
   useMotionTemplate,
   motion,
 } from "framer-motion";
-import obj from "@svgr/webpack?-svgo,+titleProp,+ref!../public/globe.svg";
+import obj from "@/public/handshake.png";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 

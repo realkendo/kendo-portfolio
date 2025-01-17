@@ -5,7 +5,8 @@ import Image from "next/image";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
 import project3 from "@/assets/project3.png";
-import { div, image } from "framer-motion/client";
+import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
+
 
 const projects = [
   {
@@ -37,10 +38,32 @@ const projects = [
   },
 ];
 
+
+const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C", "#00cc99", "#baebae"];
+
+
 export const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const color = useMotionValue(COLORS_TOP[0]);
+  
+  useEffect(() => {
+    animate(color, COLORS_TOP, {
+      ease: "easeInOut",
+      duration: 5,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
+
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
+
+
   return (
-    <section id="portfolio" className="py-32 tect-white">
+    <motion.section 
+      style={{ backgroundImage }}
+      id="portfolio" 
+      className="py-32 tect-white"
+    >
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-6xl fotn-bold mb-10">
@@ -82,6 +105,6 @@ export const Portfolio = () => {
           height={800}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };

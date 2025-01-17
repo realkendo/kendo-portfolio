@@ -29,7 +29,7 @@ export const Stack = () => {
           { stackItems.map((item) => (
             <div 
               key={item.id} 
-              className="flex items-center justify-center flex-col rounded-xl p-4"
+              className="flex items-center justify-center flex-col p-4"
             >
               <div className="mb-4 bg-white/10 p-4 rounded-xl">
                 {React.createElement(item.icon, {
