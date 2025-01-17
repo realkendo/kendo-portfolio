@@ -2,14 +2,18 @@
 
 import Image from "next/image"
 import { motion} from "framer-motion"
-// import wordpress  from "@/assets/img-wordpress.png"
-
+import wordpress  from "@/assets/img-wordpress.png"
+import elementor from "@/assets/img-elementor.png" 
+import microsoft from "@/assets/img-microsoft.png"
+import vscode from "@/assets/img-vscode.png"
 
 const images = [
-  {src: "/assets/img-wordpress.png", alt: "Wordpress"},
-  // {src: wordpress, alt: "Oracle"},
-  // {src: wordpress, alt: "Wordpress"},
-  // {src: wordpress, alt: "Python"},
+  {src: microsoft, alt: "microsft"},
+  {src: wordpress, alt: "Wordpress"},
+  {src: elementor, alt: "elementor"},
+  {src: wordpress, alt: "Oracle"},
+  {src: vscode, alt: "vscode"},
+  {src: microsoft, alt: "microsft"},
 ]
 
 
@@ -35,8 +39,8 @@ export const LogoAnimation = () => {
                   key={index}
                   src={image.src}
                   alt={image.alt}
-                  height={30}
-                  width={30}
+                  height={100}
+                  width={100}
                 />
               ))}
           </motion.div>
