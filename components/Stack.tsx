@@ -1,6 +1,6 @@
 import React from "react";
 // import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
+import { SiJavascript } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
@@ -10,7 +10,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 
 const stackItems = [
-  {id: 1, name: 'JavaScript', icon: IoLogoJavascript, color: '#ffff00'},
+  {id: 1, name: 'JavaScript', icon: SiJavascript, color: '#ffff00'},
   {id: 2, name: 'React', icon: IoLogoReact, color: '#61DAFB'},
   {id: 3, name: 'TypeScript', icon: SiTypescript, color: '#2277ff'},
   {id: 4, name: 'Next.js', icon: TbBrandNextjs, color: '#000000'},
