@@ -8,7 +8,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 
 
-
 const stackItems = [
   {id: 1, name: 'JavaScript', icon: SiJavascript, color: '#ffff00'},
   {id: 2, name: 'React', icon: IoLogoReact, color: '#61DAFB'},

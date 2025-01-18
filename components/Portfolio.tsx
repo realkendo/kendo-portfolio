@@ -55,6 +55,7 @@ export const Portfolio = () => {
     });
   }, []);
 
+  
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
 
 

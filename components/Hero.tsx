@@ -1,17 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
-import {
-  animate,
-  useMotionValue,
-  useMotionTemplate,
-  motion,
-} from "framer-motion";
+import { animate, useMotionValue, useMotionTemplate, motion } from "framer-motion";
 import obj from "@/public/handshake.png";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 
+
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C", "#00cc99", "#baebae"];
+
 
 export const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);

@@ -7,6 +7,7 @@ import elementor from "@/assets/img-elementor.png"
 import microsoft from "@/assets/img-microsoft.png"
 import vscode from "@/assets/img-vscode.png"
 
+
 const images = [
   {src: microsoft, alt: "microsft"},
   {src: wordpress, alt: "Wordpress"},
