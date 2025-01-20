@@ -20,7 +20,7 @@ export const Hero = () => {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  }, [color]);
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
@@ -35,7 +35,7 @@ export const Hero = () => {
           {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/20 px-3 py-1.5 text-sm">
             OPEN FOR DEALS
           </span> */}
-          <h1 className="text-white/40 text-5xl font-blck my-5"> Welcome to my site, I'm</h1>
+          <h1 className="text-white/40 text-5xl font-blck my-5"> Welcome to my site, I am</h1>
           <span className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent md:text-7xl">
           <motion.button
             style={{ border, boxShadow }}
