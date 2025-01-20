@@ -6,13 +6,13 @@ import { motion, useInView } from "framer-motion";
 const metrics = [
   {
     id: 1,
-    value: "5+",
+    value: "2+",
     label: "Years of Experience",
-    description: "Dedicated to honing my skills in software development.",
+    description: "Dedicated to honing my skills in software engineering.",
   },
   {
     id: 2,
-    value: "50+",
+    value: "30+",
     label: "Projects Completed",
     description:
       "From small solo projects to large-scale applications in a team.",
@@ -22,20 +22,27 @@ const metrics = [
     value: "10+",
     label: "Technologies Mastered",
     description:
-      "Proficiency in various programming languages with their respective frameworks and tools.",
+      "Proficiency in programming languages, frameworks and tools.",
   },
   {
     id: 4,
     value: "80%",
     label: "Code Quality",
-    description: "Committed to writing clea, efficeint and maintainable code.",
+    description: "Committed to writing clean, efficeint and maintainable code.",
   },
   {
     id: 5,
     value: "500+",
     label: "Github Contributions",
     description:
-      "Active contributor to open-source, business and personal projects, both public and private",
+      "Active contributor to open-source and private projects",
+  },
+  {
+    id: 6,
+    value: "20+",
+    label: "Students Trained",
+    description:
+      "A tutor of computer related skills of various levels",
   },
 ];
 
@@ -58,7 +65,7 @@ export const KeyMetrics = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-6xl font-bold mb-12"
       >
-        KEY METRICS
+       <span>KEY METRICS</span> 
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {metrics.map((metric, index) => (
@@ -90,6 +97,16 @@ export const KeyMetrics = () => {
             >
               {metric.label}
             </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ delay: 1 + index * 0.1, duration: 0.4 }}
+              className="text-gray-400"
+            >
+              {metric.description}
+            </motion.p>
+
           </motion.div>
         ))}
       </div>

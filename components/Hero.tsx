@@ -79,9 +79,9 @@ export const Hero = () => {
             />
             <p className="font-medium">10+ Satisfied Clients</p>
           </div>
-
+            <h2>Kenneth Istifanus</h2>
           <h3 className="my-6 max-w-xl">
-            Frontend Developer based in Kaduna, Nigeria... with over 2yrs
+            Telecom Engineer & Web Developer from Nigeria... with over 2yrs
             experience.
           </h3>
 

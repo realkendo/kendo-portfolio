@@ -69,7 +69,7 @@ export const Portfolio = () => {
         <div>
           <h2 className="text-6xl fotn-bold mb-10">
             {" "}
-            Selected <span className="text-gray-400">Projects</span>{" "}
+            <span className="text-gray-400">Projects</span>{" "}
           </h2>
           {projects.map((project) => (
             <div
