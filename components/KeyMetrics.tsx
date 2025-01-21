@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 
+
 const metrics = [
   {
     id: 1,
@@ -45,6 +46,7 @@ const metrics = [
       "A tutor of computer related skills of various levels",
   },
 ];
+
 
 export const KeyMetrics = () => {
   const ref = React.useRef<HTMLElement>(null);
@@ -113,3 +115,4 @@ export const KeyMetrics = () => {
     </motion.section>
   );
 };
+
