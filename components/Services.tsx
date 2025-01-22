@@ -3,7 +3,7 @@ export const Services = () => {
     { id: '01', title: 'Web Development', description: 'Crafting visually stunning and user-friendly websites tailoring to the needs of the client'},
     { id: '02', title: 'SEO', description: 'Making sites rank top on search engines'},
     { id: '03', title: 'Network Deployment', description: 'Installation of Local Area Networks within any organization'},
-    { id: '04', title: 'Process Automation', description: 'Computerizing processes in any business using technology for faster and easier operations'},
+    { id: '04', title: 'BPA', description: 'Computerizing processes in any business using technology for faster and easier operations'},
     { id: '05', title: 'Data Analysis', description: 'Analysis and visualization of data for insights and informed decisions to boost growth'},
     { id: '06', title: 'Computer Training', description: 'Tutoring newbies in the art and science behind the web and technology generally'}
   ]
