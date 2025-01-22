@@ -9,7 +9,7 @@ import vscode from "@/assets/img-vscode.png"
 
 
 const images = [
-  {src: microsoft, alt: "microsft"},
+  // {src: microsoft, alt: "microsft"},
   {src: wordpress, alt: "Wordpress"},
   {src: elementor, alt: "elementor"},
   {src: wordpress, alt: "Oracle"},

@@ -27,13 +27,13 @@ const metrics = [
   },
   {
     id: 4,
-    value: "80%",
+    value: "85%",
     label: "Code Quality",
     description: "Committed to writing clean, efficeint and maintainable code.",
   },
   {
     id: 5,
-    value: "500+",
+    value: "300+",
     label: "Github Contributions",
     description:
       "Active contributor to open-source and private projects",
