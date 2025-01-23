@@ -3,7 +3,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 
-
 const metrics = [
   {
     id: 1,
@@ -22,8 +21,7 @@ const metrics = [
     id: 3,
     value: "10+",
     label: "Technologies Mastered",
-    description:
-      "Proficiency in programming languages, frameworks and tools.",
+    description: "Proficiency in programming languages, frameworks and tools.",
   },
   {
     id: 4,
@@ -35,18 +33,15 @@ const metrics = [
     id: 5,
     value: "300+",
     label: "Github Contributions",
-    description:
-      "Active contributor to open-source and private projects",
+    description: "Active contributor to open-source and private projects",
   },
   {
     id: 6,
     value: "20+",
     label: "Students Trained",
-    description:
-      "A tutor of computer related skills of various levels",
+    description: "A tutor of computer related skills of various levels",
   },
 ];
-
 
 export const KeyMetrics = () => {
   const ref = React.useRef<HTMLElement>(null);
@@ -67,7 +62,12 @@ export const KeyMetrics = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-6xl font-bold mb-12"
       >
-       <span>KEY METRICS</span> 
+        <div className="md:w-1/4 pr-8 mb-12 md:mb-0">
+          <h2 className="text-5xl font-extrabold:sticky top-20">
+            <span>KEY METRICS</span>
+          </h2>
+        </div>
+        {/* <span><h2>KEY METRICS</h2></span>  */}
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {metrics.map((metric, index) => (
@@ -108,11 +108,9 @@ export const KeyMetrics = () => {
             >
               {metric.description}
             </motion.p>
-
           </motion.div>
         ))}
       </div>
     </motion.section>
   );
 };
-
