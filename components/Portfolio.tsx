@@ -70,13 +70,15 @@ export const Portfolio = () => {
     <motion.section
       style={{ backgroundImage }}
       id="portfolio"
-      className="py-32 tect-white"
+      className="py-32 text-white"
     >
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-6xl font-bold mb-10">
             {" "}
-            <span className="text-gray-400">Projects</span>{" "}
+            <span>
+              <h2>Projects</h2>
+            </span>
           </h2>
           {projects.map((project) => (
             <div
