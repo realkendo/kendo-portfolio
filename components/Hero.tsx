@@ -46,9 +46,8 @@ export const Hero = () => {
               style={{ border, boxShadow }}
               whileHover={{}}
               whileTap={{}}
-              className="flex w-fit items-center border-2 border-dotted gap-2 px-4 py-2"
+              className="flex w-fit items-center border-2 border-dotted gap-2 px-2 py-2"
             >
-              {" "}
               k3nd0
             </motion.button>
           </span>

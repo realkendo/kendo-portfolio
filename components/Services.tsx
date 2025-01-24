@@ -49,15 +49,6 @@ const services = [
   },
 ];
 
-const COLORS_TOP = [
-  "#00cccc",
-  "#FF9913",
-  "#1E67C6",
-  "#DD335C",
-  "#CE84CF",
-  "#dddd55",
-];
-
 export const Services = () => {
   return (
     <section className="text-white py-20 glass">
