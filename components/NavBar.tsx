@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import React, { useState } from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-
+import { color } from "framer-motion";
+import Link from "next/link";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 // nav link objects
 const navLinks = [
-  { title: "About", path: "#about" },
-  { title: "Portfolio", path: "#portfolio" },
-  { title: "Stack", path: "#stack" },
-  { title: "Contact", path: "#contact" },
-]
-
+  { title: "About", path: "#about", color: "text-greenish" },
+  { title: "Portfolio", path: "#portfolio", color: "text-orangish" },
+  { title: "Stack", path: "#stack", color: "text-bluish" },
+  { title: "Contact", path: "#contact", color: "text-pinkish" },
+];
 
 export const NavBar = () => {
   // initiallizing state for mobile menu
@@ -20,22 +19,24 @@ export const NavBar = () => {
 
   // toggle mobile menu function
   const toggleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   // close mobile menu function
   const closeNav = () => {
-    setNav(false)
-  }
+    setNav(false);
+  };
 
-  return(
-    <div className='z-50 fixed flex justify-center w-full text-white font-bold'>
-      
-      <div className='border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto'>
-        <ul className='flex flex-row p-2 space-x-8'>
-          { navLinks.map((link, index) => (
+  return (
+    <div className="z-50 fixed flex justify-center w-full text-white font-bold">
+      <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
+        <ul className="flex flex-row p-2 space-x-8">
+          {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.path} className={`transform hover:text-white/50 translate-all duration-300 ease-in-out`}>
+              <Link
+                href={link.path}
+                className={`${link.color} transform hover:text-gray-50/50 translate-all duration-300 ease-in-out`}
+              >
                 {link.title}
               </Link>
             </li>
@@ -43,22 +44,32 @@ export const NavBar = () => {
         </ul>
       </div>
 
-      <div onClick={ toggleNav } className={`md:hidden absolute top-5 right-14 border rounded z-50 text-white/70 border-white/70 p-2`}>
-          { nav ? <AiOutlineClose size={30} /> :  <AiOutlineMenu size={30} /> }
+      <div
+        onClick={toggleNav}
+        className={`md:hidden absolute top-5 right-14 border rounded z-50 text-white/70 border-white/70 p-2`}
+      >
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
 
-      <div className={ `fixed left-0 top-0 w-full h-full bg-black/90 transform transition-transform duration-300 ${ nav ? 'translate-x-0' : '-translate-x-full'}` }>
-         <ul className='flex flex-col items-center justify-center space-y-8 h-full'>
-            { navLinks.map((link, index) => (
-              <li key={index}>
-                <Link href={link.path} onClick={closeNav} className='text-5xl transform hover:text-white/50 translate-all duration-300 ease-in-out'>
-                  {link.title}
-                </Link>
-              </li>
-            ))}
-         </ul>
+      <div
+        className={`fixed left-0 top-0 w-full h-full bg-black/90 transform transition-transform duration-300 ${
+          nav ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <ul className="flex flex-col items-center justify-center space-y-8 h-full">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link
+                href={link.path}
+                onClick={closeNav}
+                className="text-5xl transform hover:text-white/50 translate-all duration-300 ease-in-out"
+              >
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-
     </div>
-  )
-}
+  );
+};

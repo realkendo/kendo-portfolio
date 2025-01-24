@@ -42,14 +42,7 @@ const projects = [
   },
 ];
 
-const COLORS_TOP = [
-  "#13FFAA",
-  "#1E67C6",
-  "#CE84CF",
-  "#DD335C",
-  "#00cc99",
-  "#baebae",
-];
+const COLORS_TOP = ["#1E67C6", "#FF9913", "#1E67C6", "#DD335C"];
 
 export const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);

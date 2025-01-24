@@ -1,18 +1,20 @@
 "use client";
 
 import React from "react";
-import { motion, useInView } from "framer-motion";
+import { color, motion, useInView } from "framer-motion";
 
 const metrics = [
   {
     id: 1,
     value: "2+",
+    color: "text-pink-300",
     label: "Years of Experience",
     description: "Dedicated to honing my skills in software engineering.",
   },
   {
     id: 2,
     value: "30+",
+    color: "text-blue-300",
     label: "Projects Completed",
     description:
       "From small solo projects to large-scale applications in a team.",
@@ -20,24 +22,28 @@ const metrics = [
   {
     id: 3,
     value: "10+",
+    color: "text-green-300",
     label: "Technologies Mastered",
     description: "Proficiency in programming languages, frameworks and tools.",
   },
   {
     id: 4,
     value: "85%",
+    color: "text-yellow-300",
     label: "Code Quality",
     description: "Committed to writing clean, efficeint and maintainable code.",
   },
   {
     id: 5,
     value: "300+",
+    color: "text-purple-300",
     label: "Github Contributions",
     description: "Active contributor to open-source and private projects",
   },
   {
     id: 6,
     value: "20+",
+    color: "text-red-300",
     label: "Students Trained",
     description: "A tutor of computer related skills of various levels",
   },
@@ -86,7 +92,7 @@ export const KeyMetrics = () => {
                 duration: 0.4,
                 type: "spring",
               }}
-              className="text-5xl font-bold text-purple-300 mb-2"
+              className={`text-5xl font-bold ${metric.color} mb-2`}
             >
               {metric.value}
             </motion.h3>

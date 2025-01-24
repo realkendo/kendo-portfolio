@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect } from "react";
-import { animate, useMotionValue, useMotionTemplate, motion } from "framer-motion";
+import {
+  animate,
+  useMotionValue,
+  useMotionTemplate,
+  motion,
+} from "framer-motion";
 import obj from "@/public/handshake.png";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 
-
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C", "#00cc99", "#baebae"];
-
+const COLORS_TOP = ["#1E67C6", "#FF9913", "#1E67C6", "#DD335C"];
 
 export const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -16,7 +19,7 @@ export const Hero = () => {
   useEffect(() => {
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 5,
+      duration: 10,
       repeat: Infinity,
       repeatType: "mirror",
     });
@@ -35,17 +38,22 @@ export const Hero = () => {
           {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/20 px-3 py-1.5 text-sm">
             OPEN FOR DEALS
           </span> */}
-          <h1 className="text-white/40 text-5xl font-blck my-5"> Welcome to my site, I am</h1>
+          <h1 className="text-white/40 text-5xl font-blck my-5">
+            {" "}
+            Welcome to my site, I am
+          </h1>
           <span className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent md:text-7xl">
-          <motion.button
-            style={{ border, boxShadow }}
-            whileHover={{}}
-            whileTap={{}}
-            className="flex w-fit items-center border-2 border-dotted gap-2 px-4 py-2"
-          > k3nd0
-          </motion.button>
+            <motion.button
+              style={{ border, boxShadow }}
+              whileHover={{}}
+              whileTap={{}}
+              className="flex w-fit items-center border-2 border-dotted gap-2 px-4 py-2"
+            >
+              {" "}
+              k3nd0
+            </motion.button>
           </span>
-          
+
           <Image
             src={"/myPhoto.png"}
             alt="Profile Pic"
@@ -79,7 +87,7 @@ export const Hero = () => {
             />
             <p className="font-medium">10+ Satisfied Clients</p>
           </div>
-            <h2>Kenneth Istifanus</h2>
+          <h2>Kenneth Istifanus</h2>
           <h3 className="my-6 max-w-xl">
             Telecom Engineer & Web Developer from Nigeria... with over 2yrs
             experience.
@@ -100,7 +108,6 @@ export const Hero = () => {
           <div className="bg-circle-background"></div>
           <div className="bg-circle"></div>
         </div>
-
       </motion.section>
     </>
   );

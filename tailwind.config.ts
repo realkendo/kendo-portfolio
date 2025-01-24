@@ -11,12 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        orangish: "#13FFAA",
+        orangish: "#FF9913",
         bluish: "#1E67C6",
         purplish: "#CE84CF",
         pinkish: "#DD335C",
-        greenish2: "#00cc99",
-        yellowish: "#baebae"
+        greenish: "#00ff77",
+        yellowish: "#dddd55"
       },
     },
   },
