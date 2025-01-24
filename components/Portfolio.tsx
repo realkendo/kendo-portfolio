@@ -70,7 +70,7 @@ export const Portfolio = () => {
           <h2 className="text-6xl font-bold mb-10">
             {" "}
             <span>
-              <h2>Projects</h2>
+              <h2>Top Projects</h2>
             </span>
           </h2>
           {projects.map((project) => (

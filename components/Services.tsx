@@ -12,14 +12,16 @@ const services = [
     color: "text-orangish",
     border: "border-orangish-200",
     title: "SEO",
-    description: "Making sites rank top on search engines",
+    description:
+      "Skilled at making websites rank top on search engines to reach a wider audience",
   },
   {
     id: "03",
     color: "text-bluish",
     border: "border-bluish-200",
     title: "Network Deployment",
-    description: "Installation of Local Area Networks within any organization",
+    description:
+      "Installation & maintainance of Local Area Networks for organizations",
   },
   {
     id: "04",
@@ -27,7 +29,7 @@ const services = [
     border: "border-pinkish-200",
     title: "BPA",
     description:
-      "Computerizing processes in any business using technology for faster and easier operations",
+      "Computerizing processes for businesses using technology for efficient operations",
   },
   {
     id: "05",
@@ -58,11 +60,11 @@ const COLORS_TOP = [
 
 export const Services = () => {
   return (
-    <section className="text-white py-20">
+    <section className="text-white py-20 glass">
       <div className="container mx-auto flex flex-col md:flex-row">
         <div className="md:w-1/4 pr-8 mb-12 md:mb-0">
           <h2 className="text-5xl font-extrabold:sticky top-20">
-            <span>SERVICES</span>
+            <span>MY SERVICES</span>
           </h2>
         </div>
 

@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import obj from "@/public/handshake.png";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 
 const COLORS_TOP = ["#1E67C6", "#FF9913", "#1E67C6", "#DD335C"];
 
@@ -38,8 +38,7 @@ export const Hero = () => {
           {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/20 px-3 py-1.5 text-sm">
             OPEN FOR DEALS
           </span> */}
-          <h1 className="text-white/40 text-5xl font-blck my-5">
-            {" "}
+          <h1 className="text-white/40 text-5xl font-black my-5 items-center text-center">
             Welcome to my site, I am
           </h1>
           <span className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent md:text-7xl">
@@ -85,10 +84,12 @@ export const Hero = () => {
               height={20}
               className="rounded-2xl mx-auto"
             />
-            <p className="font-medium">10+ Satisfied Clients</p>
+            <p className="font-medium items-center text-center">
+              10+ Satisfied Clients
+            </p>
           </div>
-          <h2>Kenneth Istifanus</h2>
-          <h3 className="my-6 max-w-xl">
+          <h2 className="items-center text-center">Kenneth Istifanus</h2>
+          <h3 className="my-6 max-w-xl items-center text-center">
             Telecom Engineer & Web Developer from Nigeria... with over 2yrs
             experience.
           </h3>
@@ -97,10 +98,9 @@ export const Hero = () => {
             style={{ border, boxShadow }}
             whileHover={{ scale: 1.015 }}
             whileTap={{ scale: 0.985 }}
-            className="flex w-fit items-center gap-2 rounded-full px-4 py-2"
+            className="flex w-fit items-center gap-2 px-4 py-2"
           >
-            Download CV
-            <FiArrowRight />
+            Download CV <FiDownload />
           </motion.button>
         </div>
 
